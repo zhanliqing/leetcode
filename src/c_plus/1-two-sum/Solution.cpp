@@ -34,22 +34,22 @@ public:
         }
         for (int i = 0; i < nums.size(); i++) {
             if (tmp.find(target - nums[i]) != tmp.end() && i != tmp[target - nums[i]]) {
-                return vector < int > {i, tmp[target - nums[i]]};
+                return vector<int>{i, tmp[target - nums[i]]};
             }
         }
-        return vector < int > {0, 0};
+        return vector<int>{0, 0};
     }
 
     vector<int> twoSum1(vector<int> &nums, int target) {
         map<int, int> tmp;
         for (int i = 0; i < nums.size(); i++) {
             if (tmp.find(target - nums[i]) != tmp.end()) {
-                return vector < int > {i, tmp[target - nums[i]]};
+                return vector<int>{i, tmp[target - nums[i]]};
             } else {
                 tmp[nums[i]] = i;
             }
         }
-        return vector < int > {0, 0};
+        return vector<int>{0, 0};
     }
 
     int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
