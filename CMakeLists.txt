@@ -11,6 +11,6 @@ set(CMAKE_CXX_FLAGS "-Wall")
 
 #set(CMAKE_CXX_FLAGS_DEBUG "-O1")
 set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG ")
-set(SOURCE_FILES src/c_plus/73_set-matrix-zeroes.cpp)
+set(SOURCE_FILES src/c_plus/1-two-sum/Solution.cpp)
 
 add_executable(cpp_t ${SOURCE_FILES})
